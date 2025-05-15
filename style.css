@@ -144,7 +144,7 @@ z-index:1000;
 
 
 .home-bgn{
-  background:url("imgs/red-bg.jpg")
+  background:url("imgs/hero-bg.jpg")
   no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,7 +252,7 @@ section h2{
 .menu .box-container .box{
   padding-bottom: 3rem;
   border-radius: 40px;
-  box-shadow: var(--box-shadow);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -271,14 +271,13 @@ section h2{
 }
 
 .box-container .box .box-txt{
-
 margin: 20px 0px 0px 20px;
 flex: 1 1 40rem;
 }
 
 
 .box-container .box .box-txt-1{
-  margin: 20px 0px 0px 20px;
+  margin-right: 20px ;
   flex: 1 1 40rem;
   }
 /*image itself*/
@@ -302,7 +301,7 @@ flex: 1 1 40rem;
   width: 80%;
   margin: 15rem auto;
   background: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
 }
@@ -418,6 +417,11 @@ h2 {
 
 
 @media (max-width:769px){
+
+  html{
+    font-size: 55%;
+  }
+
 #menu-btn{
     display: inline-block;
     transition: .2s linear;
@@ -432,7 +436,6 @@ h2 {
     left: 0;
     right: 0;
     font-size: 2rem;
-    /*background: linear-gradient(90deg, var(--white),transparent 20%);*/
     border-top:black;
     border-bottom:black;
     clip-path: polygon(0 0,100% 0,100% 0,0 0);
@@ -490,6 +493,8 @@ h2 {
 
 
 @media (max-width:450px){
+
+
   .home-bgn{
     flex-wrap: wrap;
     align-items: center;
@@ -499,7 +504,7 @@ h2 {
   
 
     html{
-      font-size: 50%;
+      font-size: 40%;
     }
 
     
@@ -519,12 +524,16 @@ h2 {
 }
 
 .menu .box-container .box h3 {
-  font-size: 22px;
+  font-size: 18px;
   color: Black;
   text-align:left;
   margin-bottom:1rem ;
 }
-
+.menu .box-container .box p{
+    color: #7c7c7c ;
+    font-size: 12px;
+    padding-right: 12px;
+}
 
 .footer .box-container{
   display: flex;
